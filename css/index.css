@@ -309,6 +309,14 @@ body{
   top: 80px;
   font-size: 80px;
 }
+.developer{
+  color:#c70039;
+  position: absolute;
+  left: 400px;
+  top: 160px;
+  height:3rem;
+  font-size: 100px;
+  font-weight:200px;
 hr{
   width:200px;
   margin:0;
