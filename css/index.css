@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Monoton&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:800,200");
-
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script:wght@500&family=Julius+Sans+One&family=Niconne&display=swap');
 *{
   padding: 0%;
   margin: 0%;
@@ -50,7 +50,9 @@ body{
   animation: scale 1.5s ease;
   position:relative;
   display: block;
+  background-color: chartreuse;
 }
+
 .cursor{
   height: 50px;
   width: 50px;
@@ -113,6 +115,7 @@ body{
   padding: 10px;
   background:transparent;
   overflow: hidden;
+  background-color:fuchsia;
  
 }
 .menubar{
@@ -122,6 +125,7 @@ body{
   cursor: pointer;
   opacity: .8;
   transition: all .4s ease;
+  background-color: blue;
   
 }
 .menubar span{
@@ -268,6 +272,7 @@ body{
   font-family: raleway;
   top: 100px;
   left: 155px;
+  /*background-color: aqua;*/
 }
 /*
 .header-content-box{
@@ -288,8 +293,12 @@ body{
   top:0;
   border: 0;
   padding: 0%;
+  background-color: blue;
+
+
+  
 }
-.firstline h{
+.firstline h1{
   text-align: center;
   display:block;
   font-size: 80px;
@@ -306,6 +315,9 @@ body{
   height:3rem;
   font-size: 100px;
   font-weight:200px;
+  
+}
+
 hr{
   width:200px;
   margin:0;
@@ -335,6 +347,7 @@ hr{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: blue;
 }
 .social-media{
   color: white;
@@ -342,13 +355,99 @@ hr{
   opacity: .6;
   margin: 8px;
   transition: all .4s ease;
+  
 }
 .social-media:hover{
   opacity: 1;
   transform: scale(1.1);
 }
+
+.header-content button{
+  font-size: 16px;
+  opacity: .8;
+  font-family: poppins;
+  font-weight: 200;
+  padding: 10px 20px;
+  background:transparent;
+  color:#c70039;
+  transition: all .4s ease;
+  outline: none;
+  margin: 20px;
+  border: 1.5px solid #c70039;
+  cursor: pointer;
+  overflow: hidden;
+  position: absolute;
+  transition: all .4s ease;
+  top: 440px;
+  left:600px;
+}
+.header-content button::before{
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 200%;
+  transform: rotate(-15deg) translateY(-20px);
+  top: 0;
+  left: 0;
+  z-index: 3;
+  background: #c70039;
+  transition: all .7s ease;
+}
+.header-content button:hover{
+  opacity: 1;
+  color:whitesmoke;
+}
+button:hover .about-me{
+   position: relative;
+  z-index: 4;
+}
+.header-content button:hover::before{
+  opacity: 1;
+  width: 120%;
+}
 .button{
   text-align: center;
+}
+
+#scroll-arrow,
+#scroll-arrow:before{
+  position: absolute;
+  left: 50%;
+}
+#scroll-arrow{
+  width: 40px;
+  height: 40px;
+  top: 560px;
+  margin: -20px 0 0 -20px;
+  transform: rotate(45deg);
+  border-left: none;
+  border-top: none;
+  border-right: 2px #BB0035 solid;
+  border-bottom: 2px #BB0035 solid;
+}
+  
+#scroll-arrow:before{
+  content: '';
+  width: 20px;
+  height: 20px;
+  top: 20px;
+  margin: -10px 0 0 -10px;
+  border-left: none;
+  border-top: none;
+  border-right: 2px #BB0035 solid;
+  border-bottom: 2px #BB0035 solid;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: arrow;
+}
+@keyframes arrow{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    transform: translate(-10px, -10px);
+  }
 }
 #breaker{
   height: 100vh;
@@ -530,7 +629,7 @@ hr{
   padding-bottom: 40px;
 
 }
-#project{
+#portfolio{
   display: none;
   height: auto;
   overflow-x: hidden;
@@ -903,7 +1002,6 @@ opacity: 1;
   align-items: center;
   flex-direction: column;
 }
-
 #footer p {
   color: #fff;
   margin: 15px 0 10px 0;
@@ -938,8 +1036,54 @@ opacity: 1;
 hr{
      border: 1px solid white;
 }
-@media all and (max-width: 9000px) and (min-width: 1441px){
-
+@media only screen and (max-width:760px) and (min-width:360px)
+{
+  #navigation-bar{
+    /*position: fixed;*/
+    width: 100%;
+    height:100px ;
+    background:transparent;
+    overflow: hidden;
+    background-color: indigo;
+   
+  }
+  .social-media-links{
+    height: 100vh;
+    position:absolute;
+    width:50px;
+    padding:10px;
+    
+  }
+  .header-content{
+    width: 100%;
+    height: 100vh;
+    left:60px;
+  }
+  .header-content .firstline{
+    
+     height: 25px;
+     width: 180px;
+     background-color: blue;
+  
+   }
+   .firstline p{
+    font-size: 20px;
+    background-color: red;
+    width: 180px;
+    height: 25px;
+  }
+  .firstline h1{
+    font-size: 40px;
+    position: absolute;
+    left:10px;
+    background-color: darkred;
+    max-width: 9000px;
+  }
+  .developer{
+    left:100px;
+  }
+}
+  /*
   .project-image img{
       height: 500px;
       width: 100%;
@@ -1108,4 +1252,4 @@ hr{
       border-radius: 8px;
       transition: all .4s ease;
   }
-}
+  */
