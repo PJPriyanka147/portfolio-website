@@ -50,7 +50,7 @@ body{
   animation: scale 1.5s ease;
   position:relative;
   display: block;
-  background-color: chartreuse;
+  
 }
 
 .cursor{
@@ -115,7 +115,7 @@ body{
   padding: 10px;
   background:transparent;
   overflow: hidden;
-  background-color:fuchsia;
+  background-color:#171717;
  
 }
 .menubar{
@@ -125,7 +125,7 @@ body{
   cursor: pointer;
   opacity: .8;
   transition: all .4s ease;
-  background-color: blue;
+  background-color: #101010;
   
 }
 .menubar span{
@@ -285,58 +285,70 @@ body{
 }
 */
 .header-content .firstline{
- /* z-index:2;*/
-  margin:0;
- /* background-color: aqua;*/
-  height: 150px;
-  width: 500px;
-  top:0;
-  border: 0;
-  padding: 0%;
-  background-color: blue;
-
-
-  
-}
-.firstline h1{
-  text-align: center;
-  display:block;
-  font-size: 80px;
   position: absolute;
-  left:150px;
+  top: 40px;
+  left:0px;
+  padding:0px;
+  margin: 0px;
+  color: white;
+  font-weight:700;
+  font-family: poppins;
+  font-size: 80px;   
+}
+.designer{
+  color: #c70039;
+  position: absolute;
   top: 80px;
+  left:0px;
+  padding:0px;
+  margin: 0px;
+  font-weight:700;
+  font-family: poppins;
   font-size: 80px;
-}
-.developer{
-  color:#c70039;
-  position: absolute;
-  left: 400px;
-  top: 160px;
-  height:3rem;
-  font-size: 100px;
-  font-weight:200px;
-  
 }
 
 hr{
-  width:200px;
+  color:white;
+  width:100px;
   margin:0;
+  top:190px;
+  position: absolute;
+  left:320px;
 }
-.firstline p{
-  font-size: 20px;
+/*
+.color{
+  color:#c70039;
+  position: relative;
+  left:10px;
+  top: 20px;
+  padding:0px;
+  margin: 0px;
+  font-family: poppins;
+  font-size: 60px;
+  font-weight:700px;
+ 
+  
 }
+
+*/
+.color{
+  color: #c70039;
+  transition: all .4s ease;
+}
+
 .header-content .secondline{
   z-index: 2;
   font-size: 30px;
   padding-top:20px ;
-  font-weight:500;
-  color: rgb(255, 255, 255,.8);
+  color:white;
   margin:0px;
   position: absolute;
-  left: 500px;
-  top:330px;
+  left: 250px;
+  top:250px;
+  
  
 }
+
 .social-media-links{
   height: 100vh;
   position: absolute;
@@ -347,7 +359,7 @@ hr{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: blue;
+  background-color:#171717;
 }
 .social-media{
   color: white;
@@ -540,6 +552,7 @@ button:hover .about-me{
   opacity: 1;
   margin-bottom: 10px;
   display: block;
+  font-family: poppins;
 }
 .about-second-line{
   opacity: .8;
@@ -1041,7 +1054,7 @@ hr{
   #navigation-bar{
     /*position: fixed;*/
     width: 100%;
-    height:100px ;
+    height: 25px;
     background:transparent;
     overflow: hidden;
     background-color: indigo;
