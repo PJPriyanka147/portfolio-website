@@ -1201,19 +1201,60 @@ hr {
     
   }
   .contact-header{
-    height: auto;
-    width: 100%;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    font-size: 45px;
-    font-family: raleway;
-    color: whitesmoke;
+    font-size: 40px;
     padding:10px;
-    padding-bottom: 30px;
-    padding-top: 60px;
-    font-weight: 900;
+    padding-bottom: 20px;
+    padding-top: 40px;
+    font-weight: 700;
+    background-color: red;
 }
+.contact-content{
+  width: 100%;
+  margin: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: blue;
+}
+.contact-info{
+  width:90%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background-size: contain;
+}
+.contact-form{
+  width: 90%;
+  padding-right: 10px;
+  
+}
+.form-header{
+  padding:20px
+}
+.input-line{
+  background-color: pink;
+}
+.input-name{
+  width: 100%;
+  padding:10px;
+  border-radius: 0px;
+  font-size: 15px;
+}
+.input-subject{
+  width: 100%;
+  border-radius: 0px;
+  font-size: 15px;
+}
+.input-textarea{
+  width: 100%;
+  padding:10px;
+  margin:0px;
+  border-radius: 0px;
+  font-size: 15px;
+}
+}/*
+
 .contact-header-caption{
     padding: 10px;
     color: whitesmoke;
