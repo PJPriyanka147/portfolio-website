@@ -1206,7 +1206,7 @@ hr {
     padding-bottom: 20px;
     padding-top: 40px;
     font-weight: 700;
-    background-color: red;
+   
 }
 .contact-content{
   width: 100%;
@@ -1216,7 +1216,7 @@ hr {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: blue;
+  
 }
 .contact-info{
   width:90%;
@@ -1232,19 +1232,19 @@ hr {
 .form-header{
   padding:20px
 }
-.input-line{
-  background-color: pink;
-}
+
 .input-name{
   width: 100%;
   padding:10px;
   border-radius: 0px;
   font-size: 15px;
+  margin: 0px;
 }
 .input-subject{
   width: 100%;
   border-radius: 0px;
   font-size: 15px;
+  padding: 10px;
 }
 .input-textarea{
   width: 100%;
