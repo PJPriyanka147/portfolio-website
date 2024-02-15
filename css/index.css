@@ -536,9 +536,9 @@ button:hover .about-me {
 }
 .about-main {
   display: flex;
-  /*align-items: center;
-  justify-content: center;*/
-  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
   height: auto;
   padding-left: 30px;
   padding-right: 50px;
@@ -599,11 +599,13 @@ button:hover .about-me {
   top:40px;
   right:0px;
 }
+/*
 .contect-info-content-line{
  
   padding: 30px;
   
 }
+*/
 
 .cv {
   padding-top: 40px;
@@ -881,6 +883,7 @@ button:hover .index {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  
 }
 .contact-info {
   width: 40%;
@@ -889,7 +892,7 @@ button:hover .index {
   background-position: center;
   background-size: cover;
   border-radius: 16px;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
   position: relative;
   overflow: hidden;
 }
@@ -996,7 +999,7 @@ form button:hover {
   color: whitesmoke;
   padding: 30px;
 }
-.contect-info-content-line {
+.contect-info-content-contact {
   height: auto;
   padding: 10px;
   position: relative;
@@ -1089,7 +1092,7 @@ hr {
     overflow: hidden;
     background-color: #171717;
   }
-  
+
   .social-media-links {
     height: 100vh;
     position: absolute;
@@ -1113,13 +1116,20 @@ hr {
     top: 40px;
   }
   .about-main {
-    flex-direction: column;
-    padding-left: 0px;
-    padding-right: 0px;
+    display: flex;
+    flex-direction:column;
+    padding: 0px;
+   
+    
   }
   .about-first-paragraph {
     width: 100%;
     padding: 30px;
+    position: relative;
+    left:0px;
+    
+   
+
   }
   .about-first-paragraph .color {
     font-size: 30px;
@@ -1127,6 +1137,11 @@ hr {
   .about-info {
     padding: 0px;
     height: 300px;
+  }
+  .cv a button {
+    padding:10px 15px;
+    font-size: 15px;
+    font-family: aileron;
   }
   .project {
     height: auto;
@@ -1192,18 +1207,23 @@ hr {
     position: relative;
     
     
+    
   }
+  
   .skill-content{
-     
+    
      height:max-content;
      width:max-content;
+     padding-top: 5px;
+     justify-content: center;
   }
   #skills img {
     max-height: 30px;
     max-width: 30px;
     display: block;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    
   }
   #skills p {
     border-style: groove;
@@ -1211,13 +1231,16 @@ hr {
     color: white;
     height: 18px;
     padding: 2px;
+   text-align: center;
     border-radius: 10px;
     border-width: 1px;
-    width: 50px;
-    font-size: 10px;
+    width: 45px;
+    font-size: 8px;
     position: absolute;
-    top: 40px;
+    top: 35px;
     text-align: center;
+   
+
     
   }
   .contact-header{
@@ -1246,11 +1269,15 @@ hr {
 }
 .contact-form{
   width: 90%;
+  height: 400px;
   padding-right: 10px;
+  padding-left: 10px;
   
 }
 .form-header{
-  padding:20px
+  font-size: 20px;
+  padding: 20px;
+  margin: 0px;
 }
 
 .input-name{
@@ -1258,20 +1285,50 @@ hr {
   padding:10px;
   border-radius: 0px;
   font-size: 15px;
-  margin: 0px;
+  margin: 5px;
+  margin-left: 0px;
+  padding-right: 0px;
 }
 .input-subject{
   width: 100%;
   border-radius: 0px;
   font-size: 15px;
-  padding: 10px;
+  margin: 5px;
+  padding-left: 8px;
 }
 .input-textarea{
   width: 100%;
   padding:10px;
-  margin:0px;
+  margin: 5px;
   border-radius: 0px;
   font-size: 15px;
+}
+form button{
+  padding:5px 20px;
+  font-size: 15px;
+  margin: 10px;
+  border-radius: 5px;
+}
+form button:hover {
+  opacity: 1;
+}
+/*
+.contact-info-header {
+  font-size: 20px;
+  padding:40px;
+  background-color: red;
+}
+.contact-info {
+  width: 90%;
+  border-radius:15;
+  margin-bottom: 70px;
+  height:400px;
+  background-color: green;
+}
+.contect-info-content-contact {
+  margin-left: 0px;
+  background-color: blueviolet;
+  padding: 0px;
 }
 }/*
 
