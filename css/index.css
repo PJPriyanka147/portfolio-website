@@ -32,7 +32,7 @@ body {
   user-select: none;
   height: auto;
   overflow-x: hidden;
-  width: 100%;
+  width: 100vw;
   background: #171717;
   line-height: 1.7;
   color: #fff;
@@ -41,7 +41,7 @@ body {
 #header {
   background: #171717;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   overflow: hidden;
   animation: scale 1.5s ease;
   position: relative;
@@ -103,7 +103,7 @@ body {
 }
 #navigation-content {
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   position: fixed;
   z-index: 5;
   background-color: black;
@@ -116,7 +116,7 @@ body {
 #navigation-bar {
   position: fixed;
   height: 100px;
-  width: 100%;
+  width: 100vw;
   z-index: 3;
   padding: 10px;
   background: transparent;
@@ -1089,6 +1089,7 @@ hr {
     overflow: hidden;
     background-color: #171717;
   }
+  
   .social-media-links {
     height: 100vh;
     position: absolute;
