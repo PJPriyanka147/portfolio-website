@@ -36,6 +36,7 @@ body {
   background: #171717;
   line-height: 1.7;
   color: #fff;
+  width:100%;
 }
 
 #header {
@@ -1088,6 +1089,10 @@ hr {
   #loader{
     width: 100vw;
     height: 100vh;
+  }
+  body{
+    overflow-x: hidden;
+    width: 100%;
   }
   #navigation-bar {
     /*position: fixed;*/
