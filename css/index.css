@@ -511,13 +511,17 @@ button:hover .about-me {
   }
 }
 #about-content {
+  width: 100%;
   display: flex;
+  height: auto;
   flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
   align-items: center;
   color: whitesmoke;
-  justify-content: center;
-  height: auto;
-  width: 100%;
+ 
+ 
+  
   padding: 0px;
 }
 
@@ -695,6 +699,7 @@ button:hover .about-me {
   flex-direction: column;
   justify-content: center;
   overflow: hidden;
+  background-color: red;
 }
 .project-text {
   width: 40%;
@@ -1095,6 +1100,7 @@ hr {
     background: transparent;
     overflow: hidden;
     background-color: #171717;
+    padding: 10px;
     
   }
   
@@ -1190,12 +1196,12 @@ hr {
     padding: 10px;
   }
   .project-image img {
-    height: 250px;
+    height: 300px;
     width: 100%;
     position: relative;
   }
   .project-image {
-    height: 250px;
+    height: 300px;
     width: 90%;
   }
   .skills-wrapper-first{
@@ -1216,7 +1222,7 @@ hr {
   }
   
   .skill-content{
-    
+     background-color: red;
      height:max-content;
      width:max-content;
      padding-top: 5px;
@@ -1252,7 +1258,7 @@ hr {
     font-size: 40px;
     padding:10px;
     padding-bottom: 20px;
-    padding-top: 40px;
+    padding-top: 100px;
     font-weight: 700;
    
 }
