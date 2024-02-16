@@ -511,19 +511,20 @@ button:hover .about-me {
   }
 }
 #about-content {
-  /*width: 100%;*/
+  width: 100%;
+  height: auto;
   display: flex;
-  /*height: auto;*/
   flex-direction: column;
-  /*justify-content: center;
-  overflow: hidden;*/
+  justify-content: center;
+  overflow: hidden;
   align-items: center;
   color: whitesmoke;
-  justify-content: center;
-  height: auto;
-  width:100%;
-  
   padding: 0px;
+  /*justify-content: center;
+  height: auto;
+  width:100%;*/
+  
+  
 }
 
 .about-header {
