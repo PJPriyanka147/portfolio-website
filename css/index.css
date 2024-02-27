@@ -1188,7 +1188,7 @@ hr {
     right: 10px;
   }
   #skills {
-    height: 400px;
+    height: 100vh;
     overflow: hidden;
     position: relative;
   }
